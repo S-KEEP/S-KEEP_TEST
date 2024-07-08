@@ -15,18 +15,8 @@ body:
   - type: input
     id: description
     attributes:
-      label: '이슈 내용(Description)'
+      label: '상세 내용(Description)'
       description: '이슈에 대해서 간략히 설명해주세요'
-    validations:
-      required: true
-
-  - type: textarea
-    id: details
-    attributes:
-      label: '상세 내용(Details)'
-      description: '이슈에 대해서 자세히 설명해주세요'
-      value: |
-        - About Details
     validations:
       required: true
 
@@ -40,13 +30,3 @@ body:
         - [ ] Task2
     validations:
       required: true
-
-  - type: textarea
-    id: references
-    attributes:
-      label: '참조(References)'
-      description: '해당 이슈과 관련된 레퍼런스를 참조해주세요'
-      value: |
-        - Reference1
-    validations:
-      required: false
