@@ -1,6 +1,6 @@
 name: 'S-KEEP Front 이슈 생성'
 description: 'S-KEEP Front Repo에 이슈를 생성하며, 생성된 이슈는 Jira와 연동됩니다.'
-labels: [order]
+labels: [feat💡]
 title: '이슈 이름을 작성해주세요'
 body:
   - type: input
