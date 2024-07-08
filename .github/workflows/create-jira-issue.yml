@@ -68,11 +68,11 @@ jobs:
 
       - name: Create branch with Ticket number
         run: |
-          ISSUE_NUMBER=${{ steps.create.outputs.issue }}
-          ISSUE_TITLE=${{ github.event.issue.title }}
+          ISSUE_NUMBER="${{ github.event.issue.number }}"
+          ISSUE_TITLE="${{ github.event.issue.title }}"
           BRANCH_NAME="${ISSUE_NUMBER}-$(echo ${ISSUE_TITLE} | sed 's/ /-/g')"
-          git checkout -b ${BRANCH_NAME}
-          git push origin ${BRANCH_NAME}
+          git checkout -b "${BRANCH_NAME}"
+          git push origin "${BRANCH_NAME}"
 
       - name: Update issue title
         uses: actions-cool/issues-helper@v3
