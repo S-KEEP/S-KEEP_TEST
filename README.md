@@ -1,5 +1,5 @@
 # S-KEEP_TEST
-수정했습니다
+수정했습니다!
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
